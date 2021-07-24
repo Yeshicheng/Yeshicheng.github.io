@@ -6,3 +6,13 @@
 gitpage实现：[https://pages.github.com/](https://pages.github.com/)
 
 gitbook的gitpage实现：[http://www.chengweiyang.cn/gitbook/github-pages/README.html](http://www.chengweiyang.cn/gitbook/github-pages/README.html)
+
+gitbook发布方式
+
+``` shell
+gitbook init
+gitbook build
+cp -r _book/* .
+git add .
+git commit -m "Publish book"
+```

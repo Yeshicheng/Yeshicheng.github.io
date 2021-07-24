@@ -389,6 +389,13 @@
 </blockquote>
 <p>gitpage&#x5B9E;&#x73B0;&#xFF1A;<a href="https://pages.github.com/" target="_blank">https://pages.github.com/</a></p>
 <p>gitbook&#x7684;gitpage&#x5B9E;&#x73B0;&#xFF1A;<a href="http://www.chengweiyang.cn/gitbook/github-pages/README.html" target="_blank">http://www.chengweiyang.cn/gitbook/github-pages/README.html</a></p>
+<p>gitbook&#x53D1;&#x5E03;&#x65B9;&#x5F0F;</p>
+<pre><code class="lang-shell">gitbook init
+gitbook build
+cp -r _book/* .
+git add .
+git commit -m &quot;Publish book&quot;
+</code></pre>
 
                                 
                                 </section>
@@ -428,7 +435,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"简介","level":"1.1","depth":1,"next":{"title":"一、项目相关","level":"1.2","depth":1,"path":"myProject/README.md","ref":"myProject/README.md","articles":[{"title":"1、运维平台","level":"1.2.1","depth":2,"path":"myProject/dome.md","ref":"myProject/dome.md","articles":[{"title":"Nexus portal迁移","level":"1.2.1.1","depth":3,"path":"myProject/dome/maven.md","ref":"myProject/dome/maven.md","articles":[]}]},{"title":"2、监控平台","level":"1.2.2","depth":2,"path":"myProject/yunxiao.md","ref":"myProject/yunxiao.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2020-11-21T07:34:57.243Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-21T09:03:52.665Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"简介","level":"1.1","depth":1,"next":{"title":"一、项目相关","level":"1.2","depth":1,"path":"myProject/README.md","ref":"myProject/README.md","articles":[{"title":"1、运维平台","level":"1.2.1","depth":2,"path":"myProject/dome.md","ref":"myProject/dome.md","articles":[{"title":"Nexus portal迁移","level":"1.2.1.1","depth":3,"path":"myProject/dome/maven.md","ref":"myProject/dome/maven.md","articles":[]}]},{"title":"2、监控平台","level":"1.2.2","depth":2,"path":"myProject/yunxiao.md","ref":"myProject/yunxiao.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2021-07-24T09:08:06.519Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-07-24T09:08:13.019Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -436,10 +443,6 @@
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
-    
-        
-        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
